@@ -29,3 +29,7 @@ Note after you setup withdraw frequency and limit, will not be possible change t
 
 * Be careful, the smart contract is not audited and may contain bugs. For more details check the smart contract source code https://bscscan.com/address/0x81c845c59dbe81654f68bc4842b3829dd06f5427#code#F1#L14 and report any issues here at github.
 * Once you deposit the funds there is not way or master key that can recover the funds, you will be forced to withdraw with your setup config that can't be changed.
+
+### It is free? Any Fees?
+
+Yes it is free to use.
