@@ -18,7 +18,7 @@ Note after you setup withdraw frequency and limit, will not be possible change t
 
 * Go to BUSD smart contract and approve FYM contract V1 *0x81c845c59dbe81654f68bc4842b3829dd06f5427* to spend your wallet BUSD 
 * * https://bscscan.com/token/0xe9e7cea3dedca5984780bafc599bd69add087d56#writeContract
-* Setup frequency and max amount to withdraw at that frequency. Note frequency is in seconds and amount is in BUSD native digits representation (need div 10**18).
+* Setup frequency and max amount to withdraw at that frequency. Note frequency is in seconds and amount is in BUSD native digits representation (need mult 10**18).
 * * https://bscscan.com/address/0x81c845c59dbe81654f68bc4842b3829dd06f5427#writeContract
 * * For example for 200 USD per month setup `max_claim` = `200*10**18` = `200000000000000000000` and `period` = `60*60*24*30` = `2592000 seconds = 30 days`
 * Deposit and withdraw are intuitive, just remember for amounts need use BUSD digits (amount*10**18).
@@ -27,7 +27,7 @@ Note after you setup withdraw frequency and limit, will not be possible change t
 
 ### It is safe FYM V1 smart contract?
 
-* Be careful, the smart contract is not audited and may contain bugs. For more details check the smart contract source code https://bscscan.com/address/0x81c845c59dbe81654f68bc4842b3829dd06f5427#code#F1#L14 and report any issues here at github.
+* Be careful, the smart contract is not audited and may contain bugs including this small documentation, use it at your own risk. For more details check the smart contract source code https://bscscan.com/address/0x81c845c59dbe81654f68bc4842b3829dd06f5427#code#F1#L14 and report any issues here at github.
 * Once you deposit the funds there is not way or master key that can recover the funds, you will be forced to withdraw with your setup config that can't be changed.
 
 ### It is free? Any Fees?
